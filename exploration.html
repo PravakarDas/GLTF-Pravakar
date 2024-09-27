@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>ImBatman - Exploration</title>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation Bar -->
+    <nav class="bg-gradient-to-r from-black to-gray-900 px-8 py-4 shadow-lg fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold tracking-wide hover:text-indigo-500 transition-colors duration-300">
+                <img src="assets/images/logo.png" alt="ImBatman" class="h-10 inline"> ImBatman
+            </a>
+            <ul class="flex space-x-6 text-lg">
+                <li><a href="index.html" class="hover:text-indigo-500">Home</a></li>
+                <li><a href="solar-system.html" class="hover:text-indigo-500">Solar System</a></li>
+                <li><a href="exploration.html" class="hover:text-indigo-500">Exploration</a></li>
+                <li><a href="ai-chatbot.html" class="hover:text-indigo-500">AI Chatbot</a></li>
+                <li><a href="about.html" class="hover:text-indigo-500">Our Team</a></li>
+                <li><a href="feedback.html" class="hover:text-indigo-500">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="bg-black min-h-screen pt-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold text-indigo-500 mb-6">Mars Exploration</h1>
+            <p class="text-xl mb-10">Discover the missions and rovers that explore the Red Planet.</p>
+            <img src="assets/images/mars-rover.jpg" alt="Mars Rover" class="mx-auto rounded-lg shadow-lg w-3/4">
+
+            <!-- 3D Scene Container -->
+            <div class="iframe-container mx-auto my-8 fade-in">
+                <iframe src="GLTF/index.html" title="Solar System Animation" class="w-full h-80 md:h-96 rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"></iframe>
+            </div>
+            <!-- <div id="container3D" class="relative mt-10" style="height: 500px;"> -->
+                <!-- <canvas class="absolute w-full h-full"></canvas> -->
+            <!-- </div> -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-black py-6 text-center">
+        <p class="text-sm">© 2024 ImBatman. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Load Three.js Script -->
+    <script type="module" src="GLTF/js/main.js"></script>
+</body>
+</html>

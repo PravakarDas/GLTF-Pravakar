@@ -1,23 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>A simple Three.JS App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImBatman - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body style="margin: 0; font-family: 'Montserrat', sans-serif; background-color: #000;">
-  <header style="margin-top: 3em; text-align: center; color: white;">
-    <h1 style="font-size: 2em; font-weight: 900;">Explore Mars</h1>
-  </header>
+<body class="bg-black text-white font-sans">
 
-  <main>
-    <div id="container3D" style="position: relative;">
-      <canvas style="width: 50%; height: 50%; position: absolute;"></canvas>
-    </div>
-  </main>
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 p-4">
+        <div class="container mx-auto flex justify-between">
+            <h1 class="text-2xl font-bold">ImBatman</h1>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                <li><a href="solar-system.html" class="hover:text-gray-300">Solar System</a></li>
+                <li><a href="exploration.html" class="hover:text-gray-300">Exploration</a></li>
+                <li><a href="ai-chatbot.html" class="hover:text-gray-300">AI Chatbot</a></li>
+                <li><a href="about.html" class="hover:text-gray-300">Our Team</a></li>
+                <li><a href="feedback.html" class="hover:text-gray-300">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <script type="module" src="js/main.js"></script>
+    <!-- <header class="text-center my-10">
+        <h1 class="text-4xl font-bold">Welcome to ImBatman!</h1>
+        <p class="mt-4 text-lg">Explore the wonders of our solar system with stunning 3D models and an AI-powered chatbot!</p>
+    </header> -->
+    <!-- Main Content -->
+    <section class="bg-black min-h-screen pt-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold text-indigo-500 mb-6">Welcome to ImBatman!</h1>
+            <p class="text-xl mb-10">Explore the wonders of our solar system with stunning 3D models and an AI-powered chatbot!</p>
+            <div id="container3D" class="relative h-[60vh] mx-auto border border-indigo-500 rounded-lg shadow-2xl"></div>
+            <!-- <button class="mt-8 px-6 py-3 bg-indigo-600 text-white font-bold rounded-full hover:bg-indigo-500 transition duration-300">
+                Start Your Journey
+            </button> -->
+        </div>
+    </section>
+
+    <main class="container mx-auto pt-2">
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">About the App</h2>
+            <p>Our team, ImBatman, is developing an innovative web app designed to deepen users' understanding of the planets in our solar system. With climate change and environmental degradation becoming ever more urgent, it’s essential to explore alternative worlds and broaden our perspective on the universe. By using public data from NASA, the app ensures scientific accuracy while fostering curiosity and learning.</p>
+            <p>The app leverages advanced technology, featuring stunning 3D models and immersive animations that make the solar system feel within reach. Each planet is explored in detail through interactive profiles, providing users with both factual information and captivating visuals. An AI-powered chatbot, fueled by NASA's public data, enhances the learning experience by offering real-time answers to space-related questions, making exploration both engaging and accessible to users of all ages.</p>
+            <h3 class="text-xl font-bold mt-4">Key Features Include:</h3>
+            <ul class="list-disc list-inside mt-2">
+                <li>An animated solar system overview that offers a dynamic visual tour of the planets.</li>
+                <li>Detailed exploration pages for each planet, highlighting unique characteristics, scientific insights, and their potential relevance to our understanding of space.</li>
+                <li>A user-friendly interface designed for smooth interaction across various devices.</li>
+                <li>High-quality, realistic visuals that deepen the connection to the wonders of outer space.</li>
+                <li>An AI chatbot that not only guides users through space exploration but also taps into NASA's rich public data for answers, insights, and additional context.</li>
+            </ul>
+            <p class="mt-4">This web app brings the wonders of space exploration to users of all ages, sparking curiosity about the solar system and beyond through an engaging, user-friendly interface. With immersive 3D models and an AI-powered chatbot that taps into NASA's public data, users can explore planets, ask questions, and receive real-time insights. The intuitive design ensures a seamless experience, making outer-world exploration both educational and enjoyable, while fostering a deep connection to the mysteries of the universe.</p>
+        </section>
+    </main>
+
+        <!-- Call to Action -->
+        <section id="cta" class="bg-gradient-to-b from-indigo-900 to-purple-900 py-12 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-white mb-4">Start Exploring Today!</h2>
+                <button class="px-8 py-3 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-300">Discover More</button>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-black py-6 text-center">
+        <p class="text-sm">© 2024 ImBatman. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
